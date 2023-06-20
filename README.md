@@ -5,6 +5,7 @@ This template should help get you started developing with Vue 3 in Vite.
 ## How to load this program ##
 Being Vue3 this is pretty straightforward and is simply loaded, and when you hover over the first section, it reduces and up pops the first box that will eventually contain the photos.  Simply click the drop down box to see the toggle through of the photos. 
 I enjoyed this project and I found Vue3 really easy.  I understand that the course is in Vue2 however I dont have any experience at all in Vue and so my rationale was to go with the latest and most efficient version rather than try to learn something that may now be out of date. 
+I have also added some beach, ie waves audio via free downloads by Zapsplat
 
 ## Recommended IDE Setup
 
