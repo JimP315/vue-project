@@ -17,7 +17,7 @@ export default {
 
   </audio>
   <div @mouseenter="hover = true" @mousreleave="hover = false" class="container" :class="{ 'container-hover': hover }">
-    <h4>Hover here and enjoy rolling waves, while you view:</h4>
+    <h4>Hover here...enjoy rolling waves, while you view:</h4>
   </div>
   <div>
     <div class="container">
@@ -31,7 +31,7 @@ export default {
       </div>
       <div v-if="chooseOption === 'pic2'">
         <figure><img alt="Beach2" class="image" src="./assets/beach6.JPG" width="450" height="330">
-          <figcaption> Moffat Beach with Teddy </figcaption>
+          <figcaption> Moffat Beach: with Teddy </figcaption>
         </figure>
 
       </div>
@@ -46,14 +46,14 @@ export default {
       <h3> <b>Life's a beach with my Daughters!</b></h3>
 
       <div v-if="chooseOption === 'pic3'">
-        <figure> <img alt="Beach3" class="image" src="./assets/bikebeachcp1.JPG" width="384" height="512">
-          <figcaption> Venice Beach with Charlotte Mar '15 </figcaption>
+        <figure> <img alt="Beach3" class="image" src="./assets/bikebeachcp1.JPG" width="376" height="502">
+          <figcaption> Venice Beach: with Charlotte Mar '15 </figcaption>
         </figure>
 
       </div>
       <div v-if="chooseOption === 'pic4'">
-        <figure> <img alt="Beach4" class="image" src="./assets/bikebeach2op.JPG" width="384" height="512">
-          <figcaption> Venice Beach with Lilly Mar '17 </figcaption>
+        <figure> <img alt="Beach4" class="image" src="./assets/bikebeach2op.JPG" width="376" height="502">
+          <figcaption> Venice Beach: with Lilly Mar '17 </figcaption>
         </figure>
 
       </div>
@@ -84,8 +84,8 @@ template {
   color: rgb(20, 78, 97);
   align-items: center;
   justify-content: center;
-  height: 64vh;
-  width: 50vh;
+  height: 63vh;
+  width: 48vh;
   border: 3 px solid #740e0e;
 
 }
