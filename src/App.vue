@@ -10,17 +10,22 @@ export default {
 </script>
 
 <template>
-  <h1> Life's a Beach for Jim Penner!</h1>
+  <h1> Life's a Beach for Jim Penner</h1>
+  <h5>Sound by Zapsplat</h5><audio controls preload muted>
+
+    <source src="./Assets/noisecreations_AMB-NCFREE02_EnglishCoast-Waves-DistantSeagulls.mp3" type="audio/mpeg">
+
+  </audio>
   <div @mouseenter="hover = true" @mousreleave="hover = false" class="container" :class="{ 'container-hover': hover }">
-    <h4>Hover here</h4>
+    <h4>Hover here and enjoy rolling waves, while you view:</h4>
   </div>
   <div>
     <div class="container">
-      <h3>Life's a Beach with my wife!</h3>
+      <h3><b>Life's a Beach with my wife!</b></h3>
 
       <div v-if="chooseOption === 'pic1'">
-        <figure> <img alt="Beach1" class="image" src="./assets/beach1.JPG" width="330" height="420">
-          <figcaption> Coolum : 1st beach pic </figcaption>
+        <figure> <img alt="Beach1" class="image" src="./assets/beach1.JPG" width="396" height="504">
+          <figcaption> Coolum : Our 1st beach pic </figcaption>
         </figure>
 
       </div>
@@ -38,7 +43,7 @@ export default {
 
 
     <div class="container">
-      <h3> Life's a beach with my Daughters!</h3>
+      <h3> <b>Life's a beach with my Daughters!</b></h3>
 
       <div v-if="chooseOption === 'pic3'">
         <figure> <img alt="Beach3" class="image" src="./assets/bikebeachcp1.JPG" width="384" height="512">
@@ -66,12 +71,10 @@ export default {
 <style scoped>
 template {
   height: 100vh;
-  background-color: blue;
-  transition-duration: 1ms;
-}
-
-img {
-  justify-content: center;
+  background-color: purple;
+  color: white;
+  transition-duration: 6ms;
+  padding: 40 px;
 }
 
 .container {
@@ -79,8 +82,11 @@ img {
   font-weight: 600;
   font-size: 24px;
   color: rgb(20, 78, 97);
+  align-items: center;
+  justify-content: center;
   height: 64vh;
   width: 50vh;
+  border: 3 px solid #740e0e;
 
 }
 
@@ -90,17 +96,8 @@ img {
   font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(128, 27, 69);
-  height: 8vh;
-  width: 5vh;
-}
-
-.main {
-  background-color: bisque;
-  font-weight: 600;
-  font-size: 24px;
-  color: lightslategray;
-  height: 65vh;
-  width: 46vh;
+  height: 15vh;
+  width: 11vh;
 }
 
 
