@@ -1,6 +1,6 @@
 # vue-project BU HW6 - Hover and pictures 
 
-This template should help get you started developing with Vue 3 in Vite.
+Access the Vue project through the src folder. 
 
 ## How to load this program ##
 Being Vue3 this is pretty straightforward and is simply loaded, and when you hover over the first section, it reduces and up pops the first box that will eventually contain the photos.  Simply click the drop down box to see the toggle through of the photos. 
