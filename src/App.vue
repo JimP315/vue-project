@@ -65,7 +65,8 @@ export default {
     </select>
 
   </div>
-  <footer><br><br><br><br>&copy; James Penner 2023 <a href="#top">Top of page</a>  &#8593;</footer>
+
+  <footer><br><br><br><br>&copy; James Penner 2023 <a href="#top">Top of page</a> &#8593;</footer>
 </template>
 
 
@@ -112,7 +113,8 @@ template {
   }
 
 }
+
 footer {
-  text-align: right;
+  text-align: center;
 }
 </style>
