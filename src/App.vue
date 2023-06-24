@@ -17,54 +17,57 @@ export default {
 
   </audio>
   <div @mouseenter="hover = true" @mousreleave="hover = false" class="container" :class="{ 'container-hover': hover }">
-    <h4>Hover here...enjoy rolling waves, while you view:</h4>
+    <h4>Hover here...enjoy rolling waves, while you vue ;) :</h4>
   </div>
-  <div>
-    <div class="container">
-      <h3><b>Life's a Beach with my wife!</b></h3>
 
-      <div v-if="chooseOption === 'pic1'">
-        <figure> <img alt="Beach1" class="image" src="./assets/beach1.JPG" width="396" height="504">
-          <figcaption> Coolum : Our 1st beach pic </figcaption>
-        </figure>
+  <div class="container">
+    <h3><b>Life's a beach with my wife!</b></h3>
 
-      </div>
-      <div v-if="chooseOption === 'pic2'">
-        <figure><img alt="Beach2" class="image" src="./assets/beach6.JPG" width="450" height="330">
-          <figcaption> Moffat Beach: with Teddy </figcaption>
-        </figure>
+    <div v-if="chooseOption === 'pic1'">
+      <figure> <img alt="Beach1" class="image" src="./assets/beach1.JPG" width="396" height="504">
+        <figcaption> Coolum : Our 1st beach pic </figcaption>
+      </figure>
 
-      </div>
     </div>
+    <div v-if="chooseOption === 'pic2'">
+      <figure><img alt="Beach2" class="image" src="./assets/beach6.JPG" width="450" height="330">
+        <figcaption> Moffat Beach: with Teddy </figcaption>
+      </figure>
+
+    </div>
+
     <select class="pic-select" v-model="chooseOption">
       <option value="pic1">1st Pic</option>
       <option value="pic2">2nd Pic</option>
     </select>
+  </div>
 
+  <div class="container">
+    <h3> <b>Life's a beach with my Daughters!</b></h3>
 
-    <div class="container">
-      <h3> <b>Life's a beach with my Daughters!</b></h3>
+    <div v-if="chooseOption === 'pic3'">
+      <figure> <img alt="Beach4" class="image" src="./assets/bikebeachcp1.JPG" width="376" height="502">
+        <figcaption> Venice Beach: with Charlotte Mar '15 </figcaption>
+      </figure>
 
-      <div v-if="chooseOption === 'pic3'">
-        <figure> <img alt="Beach3" class="image" src="./assets/bikebeachcp1.JPG" width="376" height="502">
-          <figcaption> Venice Beach: with Charlotte Mar '15 </figcaption>
-        </figure>
-
-      </div>
-      <div v-if="chooseOption === 'pic4'">
-        <figure> <img alt="Beach4" class="image" src="./assets/bikebeach2op.JPG" width="376" height="502">
-          <figcaption> Venice Beach: with Lilly Mar '17 </figcaption>
-        </figure>
-
-      </div>
     </div>
+    <div v-if="chooseOption === 'pic4'">
+      <figure> <img alt="Beach5" class="image" src="./assets/bikebeach2op.JPG" width="376" height="502">
+        <figcaption> Venice Beach: with Lilly Mar '17 </figcaption>
+      </figure>
+
+    </div>
+
     <select class="pic-select" v-model="chooseOption">
       <option value="pic3">3rd Pic</option>
       <option value="pic4">4th Pic</option>
+
     </select>
 
   </div>
+  <footer><br><br><br><br>&copy; James Penner 2023 <a href="#top">Top of page</a>  &#8593;</footer>
 </template>
+
 
 
 
@@ -73,7 +76,7 @@ template {
   height: 100vh;
   background-color: purple;
   color: white;
-  transition-duration: 6ms;
+  transition-duration: 700ms;
   padding: 40 px;
 }
 
@@ -84,7 +87,7 @@ template {
   color: rgb(20, 78, 97);
   align-items: center;
   justify-content: center;
-  height: 63vh;
+  height: 64vh;
   width: 48vh;
   border: 3 px solid #740e0e;
 
@@ -108,5 +111,8 @@ template {
     padding-right: 50%;
   }
 
+}
+footer {
+  text-align: right;
 }
 </style>
